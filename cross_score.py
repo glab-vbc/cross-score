@@ -17,7 +17,7 @@ parser.add_argument('cool', metavar='cool',
 
 parser.add_argument('--chunksize',
                     default=1e6,
-                    help='prefix for output files')
+                    help='the size of a pixel chunk loaded per interation')
 
 
 parser.add_argument('--prefix', 
