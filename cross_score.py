@@ -9,7 +9,10 @@ import argparse
 import logging
 
 
-parser = argparse.ArgumentParser(description='Calculate distance-dependent contact marginals of a Hi-C map.')
+parser = argparse.ArgumentParser(description=
+"""Calculate distance-dependent contact marginals of a Hi-C map.
+For each genomic bin, cross_score calculates the number of contacts formed in a given span of distances, upstream and downstream of the locus.
+""")
 parser.add_argument('cool', metavar='cool', 
                     type=str, 
                     help='input cooler URI')
